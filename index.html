@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Federica D'Alvano Kiriakidis</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experiences">Experiences</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Federica D'Alvano Kiriakidis</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experiences" onclick="toggleMenu()">Experiences</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assests/profile-pic.png" alt="FDK profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Federica D'Alvano Kiriakidis</h1>
+        <h2 id="section__text__p2">IBDP Student</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assests/FDK.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assests/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='www.linkedin.com/in/federica-d-alvano-kiriakidis-91175224a'"
+          />
+          <img
+            src="./assests/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assests/about-me.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assests/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experiences</h3>
+              <p>Summer Researcher at Stanford University (2024) <br />Marketing Intern at TELEVEN (2023)</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assests/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Senior at The British School Caracas<br />Head of the Teaching & Learning Committee</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Arcana collector. In constant search for the next thread—think musical theatre and prompt engineering research—to weave into the large tapestry of life’s daily optimization, underpinning my goals of (tech) world domination. Committed to uplifting my Caraqueño community through access to educational resources through a diverse range of community service projects.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assests/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experiences'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experiences</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Tech Stack</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assests/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Intern at Stanford Compression Forum</h3>
+                  <p>Conducted research on the optimization of Large Language Models in gameplay (ADD LINK EVENTUALLYY)</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assests/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Girls Who Code Summer Scholar</h3>
+                  <p>Paricipated in the Self-Paced Summer Programme earning certificates in Data Science and Cypersecurity. Form part of the global network promoting inclusion in STEM.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assests/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Kode with Klossy App Development Scholar</h3>
+                  <p>Aquired both front and back-end app development skills utilsing XCode and Swift programming language. Developed an app prototype for final presentation liked  <A HREF="https://www.canva.com/design/DAGOT_cky3c/sSvxidfTlbxJaXK7Q7PW0w/edit?utm_content=DAGOT_cky3c&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">here</A></p>
+                </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assests/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="service">
+      <p class="section__text__p1">Giving back through</p>
+      <h1 class="title">Service</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assests/libraryproject.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Library Project</h2>
+            <div>
+              <p>Inspired by the paper & ink shortage, donated 100+ books to U.E Jenaro Aguirre & organised reading days with 2nd grade kids to incentivise reading for pleasure.</p>
+            </div>
+            <div class="btn-container">
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assests/RISE.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">RISE</h2>
+            <div>
+              <p>
+                Supervise & orgnaise fun-days, where 100 kids from RISE get to come to TBSC where they are offered a range of activities from basketball to guided reading as well as free lunch & breakfast.
+              </p>
+            </div>
+            <div class="btn-container">
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assests/ELP.JPG"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">English Language Project</h2>
+            <div>
+              <p>
+                Plan & teach weekly english 101 classes for high school and college students from low-income backgrounds, democratising access to new languages!
+              </p>
+            </div>
+            <div class="btn-container">
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assests/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assests/BRITMUN.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">BRIT-MUN</h2>
+            <div>
+              <p>
+                Secretary-General, & founder of TBSC's 1st annual MUN-conference. Hosted 4 schools, and students from across Caracas exploring the central theme of LATAM voices. 
+              </p>
+            </div>
+            <div class="btn-container">
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assests/DBT.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Student Debate Competition</h2>
+            <div>
+              <p>
+                Founder and organizer of the 1st annual TBSC Sudent debate competition, inviting students from across Caracas to learn about the wonderful world of debate.  
+              </p>
+            </div>
+            <div class="btn-container">
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assests/LD.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">The Lion's Den</h2>
+            <div>
+              <p>
+                Co-Founder & Co-Editor in Chief of the schools student run publication. Constantly, writing film reviews and correcting spelling mistakes.  
+              </p>
+            </div>
+            <div class="btn-container">
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assests/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"/>
+        <h1 class="title">My favorite memories</h1>
+        <div class="slideshow-container"> <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 6</div>
+            <img src="./assests/MammaMia1.jpg" style="width:100%",style="height:25%" >
+            <div class="text">Super Trooper, opening night performace alongside my Dinamos</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 6</div>
+            <img src="./assests/Delta.JPG" style="width:100%">
+            <div class="text">Rebeca teaching us to weave traditional Warao baskets from Mariche leaf, at the Orinoco Delta</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 6</div>
+            <img src="./assests/Annie.jpg" style="width:100%">
+            <div class="text">Tomorrow from Annie, closing night (yes the dog was real & no he didn't listen to me)</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img src="./assests/MammaMia2.jpg" style="width:100%">
+            <div class="text">Money, Money, Money from Mamma Mia! Closing night </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img src="./assests/football.jpg" style="width:100%">
+            <div class="text">Post-first official girls varsity soccer match! (love the wining smiles)</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img src="./assests/chirimena.jpg" style="width: 97%;">
+            <div class="text">Organising medical donations in rural clininc Ambulatorio de Chirimena</div>
+          </div>
+        
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assests/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">federicajosefina@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assests/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="www.linkedin.com/in/federica-d-alvano-kiriakidis-91175224a">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#projects">Projects</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
